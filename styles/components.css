@@ -1,0 +1,230 @@
+:root {
+  --alert-danger: #ef4444;
+  --alert-warning: #f59e0b;
+  --alert-success: #10b981;
+  --alert-info: #3b82f6;
+  --border-img: #2c303a;
+  --btn-primary: #7c3aed;
+  --btn-secondary: grey;
+}
+
+/* avatars */
+
+.custom-avatar-large {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-img);
+}
+.custom-avatar-medium {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-img);
+}
+.custom-avatar-small {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-img);
+}
+
+/* alerts */
+.alert-danger {
+  padding: 20px;
+  background-color: rgba(239, 68, 68, 0.3);
+  border: 1px solid var(--alert-danger);
+  color: var(--alert-danger);
+  border-radius: 0.3rem;
+}
+.alert-success {
+  padding: 20px;
+  background-color: rgba(16, 185, 129, 0.3);
+  border: 1px solid var(--alert-success);
+  color: var(--alert-success);
+  border-radius: 0.3rem;
+}
+.alert-info {
+  padding: 20px;
+  background-color: rgba(59, 130, 246, 0.3);
+  border: 1px solid var(--alert-info);
+  color: var(--alert-info);
+  border-radius: 0.3rem;
+}
+.alert-warning {
+  padding: 20px;
+  background-color: rgba(245, 158, 11, 0.3);
+  border: 1px solid var(--alert-warning);
+  color: var(--alert-warning);
+  border-radius: 0.3rem;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: inherit;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/* Badge */
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.item:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.icon-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: var(--alert-danger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.icon-avatar {
+  position: absolute;
+  top: 40px;
+  right: -20px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: var(--alert-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Buttons */
+
+/* Primary */
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.3rem;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--btn-primary);
+}
+.btn-secondary {
+  color: white;
+  background-color: var(--btn-secondary);
+}
+.btn-success {
+  color: white;
+  background-color: var(--alert-success);
+}
+.btn-danger {
+  color: white;
+  background-color: var(--alert-danger);
+}
+.btn-warning {
+  color: white;
+  background-color: var(--alert-warning);
+}
+.btn-info {
+  color: white;
+  background-color: var(--alert-info);
+}
+
+/* icon button */
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+.btn-icon span {
+  margin-right: 5px;
+}
+
+/* floating button */
+.btn-float {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--btn-primary);
+  border-radius: 50%;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background 0.25s;
+  outline: none;
+}
+
+.float-fix {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.btn-float:active {
+  background-color: #5b21b6;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Links */
+.link {
+  text-decoration: none;
+}
+
+.link-primary {
+  color: var(--btn-primary);
+}
+.link-secondary {
+  color: var(--btn-secondary);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .btn-float {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .float-fix {
+    right: 10px;
+    bottom: 10px;
+  }
+}

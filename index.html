@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Component Library</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/prism.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <p>comp.libr</p>
+        <a href="https://github.com/prajvalhl/comp.libr"
+          ><img src="img/github.svg" height="50px" alt="github"
+        /></a>
+      </div>
+      <div class="nav sidebar">
+        <ul>
+          <li><a href="#avatar">Avatar</a></li>
+          <li><a href="#alerts">Alerts</a></li>
+          <li><a href="#badges">Badges</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#inputs">Inputs</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#modal">Modal</a></li>
+          <li><a href="#rating">Rating</a></li>
+          <li><a href="#slider">Slider</a></li>
+          <li><a href="#sgrid">Simplified Grid</a></li>
+          <li><a href="#typo">Typography</a></li>
+          <li><a href="#toast">Toast</a></li>
+        </ul>
+      </div>
+      <div class="content" id="top-main">
+        <button class="btn-float float-fix">
+          <a href="#top-main">
+            <span class="material-icons">arrow_circle_up</span>
+          </a>
+        </button>
+        <div id="avatar">
+          <h2>Avatars</h2>
+          <div class="container-general">
+            <div>
+              <img
+                src="img/ash.png"
+                alt="large-avatar"
+                class="custom-avatar-large"
+              />
+            </div>
+            <div>
+              <img
+                src="img/ash.png"
+                alt="medium-avatar"
+                class="custom-avatar-medium"
+              />
+            </div>
+            <div>
+              <img
+                src="img/ash.png"
+                alt="small-avatar"
+                class="custom-avatar-small"
+              />
+            </div>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Avatars
+              &lt;img src="somesource" alt="avatar" class="custom-avatar-large"/>
+              &lt;img src="somesource" alt="avatar" class="custom-avatar-medium"/>
+              &lt;img src="somesource" alt="avatar" class="custom-avatar-small"/>
+            </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="alerts">
+          <h2>Alerts</h2>
+          <div class="container-alert">
+            <div class="alert-danger">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Danger!</strong> Indicates a dangerous or potentially
+              negative action.
+            </div>
+            <div class="alert-success">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Success!</strong> Indicates a successful or positive
+              action.
+            </div>
+            <div class="alert-info">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Info!</strong> Indicates a neutral information change or
+              action.
+            </div>
+            <div class="alert-warning">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Warning!</strong> Indicates a warning that might need
+              attention.
+            </div>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Alert Danger
+              &ltdiv class="alert-danger">
+                &ltspan
+                  class="closebtn"
+                  onclick="this.parentElement.style.display='none';"
+                  >&times;&lt/span>
+                Enter Your Text Here!
+              &lt/div>
+
+              // Alert Success
+              &ltdiv class="alert-success">
+                &ltspan
+                  class="closebtn"
+                  onclick="this.parentElement.style.display='none';"
+                  >&times;&lt/span>
+                Enter Your Text Here!
+              &lt/div>
+
+              // Alert Info
+              &ltdiv class="alert-info">
+                &ltspan
+                  class="closebtn"
+                  onclick="this.parentElement.style.display='none';"
+                  >&times;&lt/span>
+                Enter Your Text Here!
+              &lt/div>
+
+              // Alert Warning
+              &ltdiv class="alert-warning">
+                &ltspan
+                  class="closebtn"
+                  onclick="this.parentElement.style.display='none';"
+                  >&times;&lt/span>
+                Enter Your Text Here!
+              &lt/div>
+            </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="badges">
+          <h2>Badge</h2>
+          <h3>Badge on Icons</h3>
+          <br /><br />
+          <div class="container-general">
+            <div class="item">
+              <span class="material-icons"> alarm </span>
+              <span class="icon-badge">2</span>
+            </div>
+            <div class="item">
+              <span class="material-icons"> notifications </span>
+              <span class="icon-badge">10</span>
+            </div>
+            <div class="item">
+              <span class="material-icons"> chat </span>
+              <span class="icon-badge"></span>
+            </div>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Icon Badge
+              &lt;div class="item">
+                &lt;span> Your Icon Here &lt;/span>
+                &lt;span class="icon-badge">2&lt;/span>
+              &lt;/div>
+            </code>
+          </pre>
+          <br /><br />
+          <h3>Badge on Avatars</h3>
+          <br /><br />
+          <div class="container-general">
+            <div class="item">
+              <span class="icon-avatar">2</span>
+              <img src="img/ash.png" alt="" class="custom-avatar-medium" />
+            </div>
+            <div class="item">
+              <span class="icon-avatar"></span>
+              <img src="img/ash.png" alt="" class="custom-avatar-medium" />
+            </div>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Avatar Badge
+              &lt;div class="item">
+                &lt;span> Your Icon Here &lt;/span>
+                &lt;span class="icon-avatar">2&lt;/span>
+              &lt;/div>
+            </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="buttons">
+          <h2>Buttons</h2>
+          <h3>Primary</h3>
+          <div class="container-general">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Buttons
+              &lt;button class="btn">Default&lt;/button>
+              &lt;button class="btn btn-primary">Primary&lt;/button>
+              &lt;button class="btn btn-secondary">Secondary&lt;/button>
+              &lt;button class="btn btn-success">Success&lt;/button>
+              &lt;button class="btn btn-danger">Danger&lt;/button>
+              &lt;button class="btn btn-warning">Warning&lt;/button>
+              &lt;button class="btn btn-info">Info&lt;/button>
+            </code>
+          </pre>
+          <h3>Links</h3>
+          <div class="container-general">
+            <a class="link link-primary" href="#">Primary Link</a>
+            <a class="link link-secondary" href="#">Secondary Link</a>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Links
+              &lt;a class="link link-primary" href="#">Primary Link&lt;/a>
+              &lt;a class="link link-secondary" href="#">Secondary Link&lt;/a>
+            </code>
+          </pre>
+          <h3>Icon Buttons</h3>
+          <div class="container-general">
+            <button class="btn btn-primary btn-icon">
+              <span class="material-icons">favorite</span>
+              Favorite
+            </button>
+
+            <button class="btn btn-info btn-icon">
+              <span class="material-icons">feedback</span>
+              Feedback
+            </button>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Icon Buttons
+              &lt;button class="btn btn-primary btn-icon">
+                &lt;span> Your Icon Here &lt;/span>
+                Favorite
+              &lt;/button>
+            </code>
+          </pre>
+          <h3>Floating Action Buttons</h3>
+          <div class="container-general">
+            <button class="btn-float">
+              <span class="material-icons">add</span>
+            </button>
+            <button class="btn-float">
+              <span class="material-icons">clear</span>
+            </button>
+          </div>
+          <pre>
+            <code class="language-html">
+              // Floating Action Buttons
+              &lt;button class="btn-float float-fix">
+                &lt;span> Your Icon Here &lt;/span>
+                Favorite
+              &lt;/button>
+            </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="cards">
+          <h2>Cards</h2>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/prism.js"></script>
+  </body>
+</html>
