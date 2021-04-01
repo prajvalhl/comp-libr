@@ -14,7 +14,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/prism.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/atom-one-dark.min.css"
+    />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/components.css" />
   </head>
@@ -22,9 +25,14 @@
     <div class="grid-container">
       <div class="header">
         <p>comp.libr</p>
-        <a href="https://github.com/prajvalhl/comp.libr"
-          ><img src="img/github.svg" height="50px" alt="github"
-        /></a>
+        <div>
+          <a href="https://github.com/prajvalhl/comp.libr" target="_blank"
+            ><img src="img/github.svg" class="header-imgs" alt="github"
+          /></a>
+          <a href="https://www.linkedin.com/in/hlprajval/" target="_blank"
+            ><img src="img/linkedin.png" class="header-imgs" alt="github"
+          /></a>
+        </div>
       </div>
       <div class="nav sidebar">
         <ul>
@@ -77,12 +85,12 @@
             </div>
           </div>
           <pre>
-            <code class="language-html">
-              // Avatars
-              &lt;img src="somesource" alt="avatar" class="custom-avatar-large"/>
-              &lt;img src="somesource" alt="avatar" class="custom-avatar-medium"/>
-              &lt;img src="somesource" alt="avatar" class="custom-avatar-small"/>
-            </code>
+  <code class="language-html">
+  // Avatars
+  &lt;img src="somesource" alt="avatar" class="custom-avatar-large"/>
+  &lt;img src="somesource" alt="avatar" class="custom-avatar-medium"/>
+  &lt;img src="somesource" alt="avatar" class="custom-avatar-small"/>
+  </code>
           </pre>
         </div>
         <hr />
@@ -127,43 +135,43 @@
             </div>
           </div>
           <pre>
-            <code class="language-html">
-              // Alert Danger
-              &ltdiv class="alert-danger">
-                &ltspan
-                  class="closebtn"
-                  onclick="this.parentElement.style.display='none';"
-                  >&times;&lt/span>
-                Enter Your Text Here!
-              &lt/div>
+  <code class="language-html">
+  // Alert Danger
+  &ltdiv class="alert-danger">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
 
-              // Alert Success
-              &ltdiv class="alert-success">
-                &ltspan
-                  class="closebtn"
-                  onclick="this.parentElement.style.display='none';"
-                  >&times;&lt/span>
-                Enter Your Text Here!
-              &lt/div>
+  // Alert Success
+  &ltdiv class="alert-success">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
 
-              // Alert Info
-              &ltdiv class="alert-info">
-                &ltspan
-                  class="closebtn"
-                  onclick="this.parentElement.style.display='none';"
-                  >&times;&lt/span>
-                Enter Your Text Here!
-              &lt/div>
+  // Alert Info
+  &ltdiv class="alert-info">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
 
-              // Alert Warning
-              &ltdiv class="alert-warning">
-                &ltspan
-                  class="closebtn"
-                  onclick="this.parentElement.style.display='none';"
-                  >&times;&lt/span>
-                Enter Your Text Here!
-              &lt/div>
-            </code>
+  // Alert Warning
+  &ltdiv class="alert-warning">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
+  </code>
           </pre>
         </div>
         <hr />
@@ -186,13 +194,13 @@
             </div>
           </div>
           <pre>
-            <code class="language-html">
-              // Icon Badge
-              &lt;div class="item">
-                &lt;span> Your Icon Here &lt;/span>
-                &lt;span class="icon-badge">2&lt;/span>
-              &lt;/div>
-            </code>
+  <code class="language-html">
+    // Icon Badge
+    &lt;div class="item">
+      &lt;span> Your Icon Here &lt;/span>
+      &lt;span class="icon-badge">2&lt;/span>
+    &lt;/div>
+  </code>
           </pre>
           <br /><br />
           <h3>Badge on Avatars</h3>
@@ -208,13 +216,13 @@
             </div>
           </div>
           <pre>
-            <code class="language-html">
-              // Avatar Badge
-              &lt;div class="item">
-                &lt;span> Your Icon Here &lt;/span>
-                &lt;span class="icon-avatar">2&lt;/span>
-              &lt;/div>
-            </code>
+  <code class="language-html">
+    // Avatar Badge
+    &lt;div class="item">
+      &lt;span> Your Icon Here &lt;/span>
+      &lt;span class="icon-avatar">2&lt;/span>
+    &lt;/div>
+  </code>
           </pre>
         </div>
         <hr />
@@ -230,16 +238,16 @@
             <button class="btn btn-info">Info</button>
           </div>
           <pre>
-            <code class="language-html">
-              // Buttons
-              &lt;button class="btn">Default&lt;/button>
-              &lt;button class="btn btn-primary">Primary&lt;/button>
-              &lt;button class="btn btn-secondary">Secondary&lt;/button>
-              &lt;button class="btn btn-success">Success&lt;/button>
-              &lt;button class="btn btn-danger">Danger&lt;/button>
-              &lt;button class="btn btn-warning">Warning&lt;/button>
-              &lt;button class="btn btn-info">Info&lt;/button>
-            </code>
+  <code class="language-html">
+    // Buttons
+    &lt;button class="btn">Default&lt;/button>
+    &lt;button class="btn btn-primary">Primary&lt;/button>
+    &lt;button class="btn btn-secondary">Secondary&lt;/button>
+    &lt;button class="btn btn-success">Success&lt;/button>
+    &lt;button class="btn btn-danger">Danger&lt;/button>
+    &lt;button class="btn btn-warning">Warning&lt;/button>
+    &lt;button class="btn btn-info">Info&lt;/button>
+  </code>
           </pre>
           <h3>Links</h3>
           <div class="container-general">
@@ -247,11 +255,11 @@
             <a class="link link-secondary" href="#">Secondary Link</a>
           </div>
           <pre>
-            <code class="language-html">
-              // Links
-              &lt;a class="link link-primary" href="#">Primary Link&lt;/a>
-              &lt;a class="link link-secondary" href="#">Secondary Link&lt;/a>
-            </code>
+  <code class="language-html">
+    // Links
+    &lt;a class="link link-primary" href="#">Primary Link&lt;/a>
+    &lt;a class="link link-secondary" href="#">Secondary Link&lt;/a>
+  </code>
           </pre>
           <h3>Icon Buttons</h3>
           <div class="container-general">
@@ -266,13 +274,13 @@
             </button>
           </div>
           <pre>
-            <code class="language-html">
-              // Icon Buttons
-              &lt;button class="btn btn-primary btn-icon">
-                &lt;span> Your Icon Here &lt;/span>
-                Favorite
-              &lt;/button>
-            </code>
+  <code class="language-html">
+    // Icon Buttons
+    &lt;button class="btn btn-primary btn-icon">
+      &lt;span> Your Icon Here &lt;/span>
+      Favorite
+    &lt;/button>
+  </code>
           </pre>
           <h3>Floating Action Buttons</h3>
           <div class="container-general">
@@ -284,13 +292,13 @@
             </button>
           </div>
           <pre>
-            <code class="language-html">
-              // Floating Action Buttons
-              &lt;button class="btn-float float-fix">
-                &lt;span> Your Icon Here &lt;/span>
-                Favorite
-              &lt;/button>
-            </code>
+  <code class="language-html">
+    // Floating Action Buttons
+    &lt;button class="btn-float float-fix">
+      &lt;span> Your Icon Here &lt;/span>
+      Favorite
+    &lt;/button>
+  </code>
           </pre>
         </div>
         <hr />
@@ -299,6 +307,9 @@
         </div>
       </div>
     </div>
-    <script src="scripts/prism.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

@@ -18,7 +18,11 @@ h3 {
 }
 
 .language-html {
-  display: none;
+  width: 80%;
+  margin: auto;
+  justify-content: start;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
 /* grid layout */
@@ -36,6 +40,15 @@ h3 {
   justify-content: space-between;
   padding: 0 2rem;
   align-items: center;
+}
+
+.header-imgs {
+  height: 30px;
+  padding: 0 10px;
+}
+
+.header-imgs:last-child {
+  padding-right: 0;
 }
 
 #top-main a[href="#top-main"] {
@@ -129,8 +142,9 @@ h3 {
     width: 80%;
   }
 
-  .language-html {
-    display: block;
+  .header-imgs {
+    height: 50px;
+    padding: 0 1rem;
   }
 
   .container-general {
