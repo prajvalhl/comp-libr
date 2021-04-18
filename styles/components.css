@@ -1,3 +1,6 @@
+/* All top level CSS are written to suit Desktop layout */
+/* For Mobile layout, write your CSS in media query */
+
 :root {
   --alert-danger: #ef4444;
   --alert-warning: #f59e0b;
@@ -88,6 +91,7 @@
   color: #333;
   background-color: #ddd;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .item:hover {
@@ -217,7 +221,118 @@
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+/* Cards */
+
+/* text only */
+.card-text {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: 20rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+/* Vertical card */
+.card-vertical {
+  border: 1px solid black;
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+/* Horizontal card */
+.card-horizontal {
+  border: 1px solid black;
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hori-resp {
+  font-size: 1rem;
+}
+
+/* vertical/horizontal general properties */
+.ptext {
+  padding: 0 1rem;
+}
+
+.p-head {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.p-disc {
+  text-decoration: line-through;
+  display: inline;
+  font-weight: 600;
+  color: gray;
+}
+
+.p-price {
+  display: inline;
+  padding-left: 0;
+  font-weight: 600;
+}
+
+/* shadow card */
+.card-shadow {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* overlay card */
+.card-overlay {
+  opacity: 0.1;
+}
+
+.overlay-bg {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.overlay-text {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 25%;
+}
+
+/* dismiss card */
+.card-dismiss {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: var(--alert-danger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* badged card */
+.card-badge {
+  position: absolute;
+  top: 20px;
+  right: 180px;
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  background-color: var(--alert-info);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem 0 0.3rem 0;
+}
+
+/* images */
+
+@media (max-width: 900px) {
   .btn-float {
     width: 2.5rem;
     height: 2.5rem;
@@ -226,5 +341,9 @@
   .float-fix {
     right: 10px;
     bottom: 10px;
+  }
+
+  .hori-resp {
+    font-size: 0.9rem;
   }
 }

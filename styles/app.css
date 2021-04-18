@@ -1,3 +1,6 @@
+/* All top level CSS are written to suit mobile layout */
+/* For Desktop layout, write your CSS in media query */
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +20,7 @@ h3 {
   margin-top: 2rem;
 }
 
+/* highlight JS */
 .language-html {
   width: 80%;
   margin: auto;
@@ -40,20 +44,15 @@ h3 {
   justify-content: space-between;
   padding: 0 2rem;
   align-items: center;
+  height: 6rem;
 }
 
-.header-imgs {
+.header-links {
   height: 30px;
-  padding: 0 10px;
-}
-
-.header-imgs:last-child {
-  padding-right: 0;
-}
-
-#top-main a[href="#top-main"] {
-  color: white;
+  padding: 0 5px;
   text-decoration: none;
+  font-size: 1rem;
+  color: white;
 }
 
 .header p {
@@ -66,6 +65,9 @@ h3 {
   overflow: auto;
   height: 87vh;
   max-width: 250px;
+  position: fixed;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
 }
 
 .nav {
@@ -89,6 +91,11 @@ h3 {
 .nav a:hover {
   color: #7c3aed;
   cursor: pointer;
+}
+
+#top-main a[href="#top-main"] {
+  color: white;
+  text-decoration: none;
 }
 
 .content {
@@ -131,23 +138,39 @@ h3 {
 }
 
 /* responsive */
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
   /* body */
   .nav {
     display: grid;
   }
 
+  .language-html {
+    width: 90%;
+  }
+
+  .header {
+    position: fixed;
+    width: 97%;
+    height: 7rem;
+  }
+
   .content {
     grid-column: 2 / 4;
     width: 80%;
+    padding-top: 6rem;
   }
 
-  .header-imgs {
+  .header-links {
     height: 50px;
     padding: 0 1rem;
+    font-size: 1.5rem;
   }
 
   .container-general {
     margin-bottom: 2rem;
+  }
+
+  .header p {
+    font-size: 3rem;
   }
 }

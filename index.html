@@ -26,12 +26,18 @@
       <div class="header">
         <p>comp.libr</p>
         <div>
-          <a href="https://github.com/prajvalhl/comp.libr" target="_blank"
-            ><img src="img/github.svg" class="header-imgs" alt="github"
-          /></a>
-          <a href="https://www.linkedin.com/in/hlprajval/" target="_blank"
-            ><img src="img/linkedin.png" class="header-imgs" alt="github"
-          /></a>
+          <a
+            class="header-links"
+            href="https://github.com/prajvalhl/comp.libr"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            class="header-links"
+            href="https://www.linkedin.com/in/hlprajval/"
+            target="_blank"
+            >LinkedIn</a
+          >
         </div>
       </div>
       <div class="nav sidebar">
@@ -49,7 +55,7 @@
           <li><a href="#rating">Rating</a></li>
           <li><a href="#slider">Slider</a></li>
           <li><a href="#sgrid">Simplified Grid</a></li>
-          <li><a href="#typo">Typography</a></li>
+          <li><a href="#text-utilities">Text Utilities</a></li>
           <li><a href="#toast">Toast</a></li>
         </ul>
       </div>
@@ -219,8 +225,8 @@
   <code class="language-html">
   // Avatar Badge
   &lt;div class="item">
-    &lt;span> Your Icon Here &lt;/span>
-    &lt;span class="icon-avatar">2&lt;/span>
+    &lt;span class="icon-avatar"> 2 &lt;/span>
+    &lt;img src="some-image-source" alt="avatar-badge" class="custom-avatar-medium" />
   &lt;/div>
   </code>
           </pre>
@@ -304,6 +310,271 @@
         <hr />
         <div id="cards">
           <h2>Cards</h2>
+          <h3>Vertical Card</h3>
+          <div class="card-vertical">
+            <img src="https://via.placeholder.com/250x275" alt="" />
+            <div>
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-disc">Rs 999</p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Vertical card
+  &lt;div class="card-vertical">
+    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;p class="ptext p-head">Product Name&lt;/p>
+    &lt;p class="ptext p-dec">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+    eligendi saepe quidem id voluptate nemo!
+    &lt;/p>
+    &lt;p class="ptext p-disc">Rs 999&lt;/p>
+    &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Horizontal Card</h3>
+          <div class="card-horizontal">
+            <img src="https://via.placeholder.com/250x275" alt="" />
+            <div class="hori-resp">
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-disc">Rs 999</p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Horizontal card
+  &lt;div class="card-horizontal">
+    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;div>
+      &lt;p class="ptext p-head">Product Name&lt;/p>
+      &lt;p class="ptext p-dec">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+      eligendi saepe quidem id voluptate nemo!
+      &lt;/p>
+      &lt;p class="ptext p-disc">Rs 999&lt;/p>
+      &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Text only Card</h3>
+          <div class="card-text">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+              recusandae provident, sapiente rerum itaque iste, illum totam
+              distinctio voluptatem veritatis accusamus reprehenderit blanditiis
+              harum ad consectetur accusantium numquam molestiae dolor.
+            </p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Text only card
+  &lt;div class="card-text">
+    &lt;h1>Heading&lt;/h1>
+    &lt;p>
+    // Enter your text here
+    &lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with text overlay</h3>
+          <div class="card-text overlay-bg">
+            <div class="card-overlay">
+              <h1>Heading</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                recusandae provident, sapiente rerum itaque iste, illum totam
+                distinctio voluptatem veritatis accusamus reprehenderit
+                blanditiis harum ad consectetur accusantium numquam molestiae
+                dolor.
+              </p>
+            </div>
+            <p class="overlay-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi, dolore!
+            </p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Text only card
+  &lt;div class="card-text overlay-bg">
+    &lt;div class='card-overlay'>
+      &lt;h1>Heading&lt;/h1>
+      &lt;p>
+      // Enter your text here
+      &lt;/p>
+    &lt;/div>
+    &ltp class="overlay-text">Lorem ipsum dolor sit amet.&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with Dismiss</h3>
+          <div class="card-vertical">
+            <span class="material-icons card-dismiss">close</span>
+            <img src="https://via.placeholder.com/250x275" alt="" />
+            <div>
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-disc">Rs 999</p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Vertical card
+  &lt;div class="card-vertical">
+  &lt;span class="material-icons card-dismiss">close&lt;/span>
+    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;p class="ptext p-head">Product Name&lt;/p>
+    &lt;p class="ptext p-dec">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+    eligendi saepe quidem id voluptate nemo!
+    &lt;/p>
+    &lt;p class="ptext p-disc">Rs 999&lt;/p>
+    &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with Badge</h3>
+          <div class="card-vertical">
+            <span class="card-badge">New!</span>
+            <img src="https://via.placeholder.com/250x275" alt="" />
+            <div>
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-disc">Rs 999</p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Vertical card
+  &lt;div class="card-vertical">
+  &lt;span class="material-icons card-dismiss">close&lt;/span>
+    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;p class="ptext p-head">Product Name&lt;/p>
+    &lt;p class="ptext p-dec">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+    eligendi saepe quidem id voluptate nemo!
+    &lt;/p>
+    &lt;p class="ptext p-disc">Rs 999&lt;/p>
+    &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with Shadow</h3>
+          <div class="card-text card-shadow">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+              recusandae provident, sapiente rerum itaque iste, illum totam
+              distinctio voluptatem veritatis accusamus reprehenderit blanditiis
+              harum ad consectetur accusantium numquam molestiae dolor.
+            </p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Card with shadow
+  &lt;div class="card-text card-shadow">
+    &lt;h1>Heading&lt;/h1>
+    &lt;p>
+    // Enter your text here
+    &lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="images">
+          <h2>Images</h2>
+          <h3>Responsive Image</h3>
+          <div></div>
+          <h3>Round Image</h3>
+          <div></div>
+        </div>
+        <hr />
+        <div id="inputs">
+          <h2>Input</h2>
+          <h3>Textbox</h3>
+          <div></div>
+          <h3>Validation and Errors styled</h3>
+          <div></div>
+        </div>
+        <hr />
+        <div id="lists">
+          <h2>Lists</h2>
+          <h3>Spaced</h3>
+          <div></div>
+          <h3>Stacked</h3>
+          <div></div>
+        </div>
+        <hr />
+        <div id="navigation">
+          <h2>Navigation</h2>
+          <h3>Desktop</h3>
+          <div></div>
+          <h3>Submenus</h3>
+          <div></div>
+          <h3>Hamburger</h3>
+          <div></div>
+        </div>
+        <hr />
+        <div id="modal">
+          <h2>Modal</h2>
+          <div></div>
+        </div>
+        <hr />
+        <div id="rating">
+          <h2>Rating</h2>
+          <div></div>
+        </div>
+        <hr />
+        <div id="slider">
+          <h2>Slider</h2>
+          <div></div>
+        </div>
+        <hr />
+        <div id="sgrid">
+          <h2>Simplified Grid</h2>
+          <h3>Grid-2</h3>
+          <div></div>
+          <h3>Grid-3</h3>
+          <div></div>
+        </div>
+        <hr />
+        <div id="text-utilities">
+          <h2>Text Utilities</h2>
+          <h3>Heading</h3>
+          <div></div>
+          <h3>Small Text</h3>
+          <div></div>
+          <h3>Gray Text</h3>
+          <div></div>
+          <h3>Center Text</h3>
+          <div></div>
+        </div>
+        <hr />
+        <div id="toast">
+          <h2>Toast</h2>
+          <div></div>
         </div>
       </div>
     </div>
