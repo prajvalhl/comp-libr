@@ -18,8 +18,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/atom-one-dark.min.css"
     />
-    <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
     <div class="grid-container">
@@ -616,7 +616,45 @@
         <div id="navigation">
           <h2>Navigation</h2>
           <h3>Desktop</h3>
-          <div></div>
+          <div>
+            <nav class="navbar">
+              <div class="navbar-icon">
+                <span class="material-icons"> fingerprint </span>
+                <a class="link link-primary" href="#navigation">CyberPrint</a>
+              </div>
+              <div>
+                <ul class="navbar-items">
+                  <li class="list inline-list">
+                    <input type="text" placeholder="search" class="search" />
+                  </li>
+                  <li class="list inline-list">Home</li>
+                  <li class="list inline-list">About</li>
+                  <li class="list inline-list">Contact</li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Navbar
+  &lt;nav class="navbar">
+    &lt;div class="navbar-icon">
+      &lt;span> Your Icon Here &lt;/span>
+      &lt;a class="link link-primary" href="">Your Company Name&lt;/a>
+    &lt;/div>
+    &lt;div>
+      &lt;ul class="navbar-items">
+        &lt;li class="list inline-list">
+          &lt;input type="text" placeholder="search" class="search" />
+        &lt;/li>
+        &lt;li class="list inline-list">Home&lt;/li>
+        &lt;li class="list inline-list">About&lt;/li>
+        &lt;li class="list inline-list">Contact&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+  </code>
+          </pre>
           <h3>Submenus</h3>
           <div class="text-center">Coming soon...</div>
           <h3>Hamburger</h3>
@@ -630,7 +668,19 @@
         <hr />
         <div id="rating">
           <h2>Rating</h2>
-          <div></div>
+          <div class="rating">
+            <p>4.4</p>
+            <span class="material-icons"> star_rate </span>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Rating
+  &lt;div class="rating">
+    &lt;p>4.4&lt;/p>
+    &lt;span> Insert Your STAR Icone Here. &lt;/span>
+  &lt;/div>
+  </code>
+        </pre>
         </div>
         <hr />
         <div id="slider">

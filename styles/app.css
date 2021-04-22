@@ -140,6 +140,8 @@ h3 {
   margin: 10px 20px;
 }
 
+/* navigation */
+
 /* footer */
 #md-footer {
   margin: 3rem 0;
@@ -150,10 +152,6 @@ h3 {
 
 #md-footer ul {
   padding-inline-start: 0px;
-}
-
-.inline-list {
-  display: inline;
 }
 
 /* responsive */
