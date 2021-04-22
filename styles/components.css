@@ -2,13 +2,14 @@
 /* For Mobile layout, write your CSS in media query */
 
 :root {
-  --alert-danger: #ef4444;
-  --alert-warning: #f59e0b;
-  --alert-success: #10b981;
-  --alert-info: #3b82f6;
-  --border-img: #2c303a;
-  --btn-primary: #7c3aed;
-  --btn-secondary: grey;
+  --custom-red: #ef4444;
+  --custom-yellow: #f59e0b;
+  --custom-green: #10b981;
+  --custom-blue: #3b82f6;
+  --avatar-border: #2c303a;
+  --primary-color: #7c3aed;
+  --secondary-color: #80868b;
+  --border-color: #dadce0;
 }
 
 /* avatars */
@@ -18,50 +19,50 @@
   height: 8rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--border-img);
+  border: 2px solid var(--avatar-border);
 }
 .custom-avatar-medium {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--border-img);
+  border: 2px solid var(--avatar-border);
 }
 .custom-avatar-small {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--border-img);
+  border: 2px solid var(--avatar-border);
 }
 
 /* alerts */
 .alert-danger {
   padding: 20px;
   background-color: rgba(239, 68, 68, 0.3);
-  border: 1px solid var(--alert-danger);
-  color: var(--alert-danger);
+  border: 1px solid var(--custom-red);
+  color: var(--custom-red);
   border-radius: 0.3rem;
 }
 .alert-success {
   padding: 20px;
   background-color: rgba(16, 185, 129, 0.3);
-  border: 1px solid var(--alert-success);
-  color: var(--alert-success);
+  border: 1px solid var(--custom-green);
+  color: var(--custom-green);
   border-radius: 0.3rem;
 }
 .alert-info {
   padding: 20px;
   background-color: rgba(59, 130, 246, 0.3);
-  border: 1px solid var(--alert-info);
-  color: var(--alert-info);
+  border: 1px solid var(--custom-blue);
+  color: var(--custom-blue);
   border-radius: 0.3rem;
 }
 .alert-warning {
   padding: 20px;
   background-color: rgba(245, 158, 11, 0.3);
-  border: 1px solid var(--alert-warning);
-  color: var(--alert-warning);
+  border: 1px solid var(--custom-yellow);
+  color: var(--custom-yellow);
   border-radius: 0.3rem;
 }
 
@@ -106,7 +107,7 @@
   width: 25px;
   height: 25px;
   color: #fff;
-  background-color: var(--alert-danger);
+  background-color: var(--custom-red);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +122,7 @@
   width: 25px;
   height: 25px;
   color: #fff;
-  background-color: var(--alert-success);
+  background-color: var(--custom-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,27 +142,27 @@
 
 .btn-primary {
   color: white;
-  background-color: var(--btn-primary);
+  background-color: var(--primary-color);
 }
 .btn-secondary {
   color: white;
-  background-color: var(--btn-secondary);
+  background-color: var(--secondary-color);
 }
 .btn-success {
   color: white;
-  background-color: var(--alert-success);
+  background-color: var(--custom-green);
 }
 .btn-danger {
   color: white;
-  background-color: var(--alert-danger);
+  background-color: var(--custom-red);
 }
 .btn-warning {
   color: white;
-  background-color: var(--alert-warning);
+  background-color: var(--custom-yellow);
 }
 .btn-info {
   color: white;
-  background-color: var(--alert-info);
+  background-color: var(--custom-blue);
 }
 
 /* icon button */
@@ -178,7 +179,7 @@
 .btn-float {
   width: 4rem;
   height: 4rem;
-  background-color: var(--btn-primary);
+  background-color: var(--primary-color);
   border-radius: 50%;
   border: none;
   color: white;
@@ -211,10 +212,10 @@
 }
 
 .link-primary {
-  color: var(--btn-primary);
+  color: var(--primary-color);
 }
 .link-secondary {
-  color: var(--btn-secondary);
+  color: var(--secondary-color);
 }
 
 .link:hover {
@@ -307,12 +308,11 @@
   width: 25px;
   height: 25px;
   color: #fff;
-  background-color: var(--alert-danger);
+  background-color: var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid white;
 }
 
 /* badged card */
@@ -323,7 +323,7 @@
   width: 60px;
   height: 30px;
   color: #fff;
-  background-color: var(--alert-info);
+  background-color: var(--custom-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,6 +331,69 @@
 }
 
 /* images */
+/* Responsive Image */
+.image-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.image-round {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Input */
+/* TextBox */
+.input-textbox {
+  padding: 1rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 0.3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.input-textbox::placeholder,
+.input-textbox:focus {
+  color: var(--primary-color);
+  outline: var(--secondary-color);
+}
+
+.input-invalid {
+  color: var(--custom-red);
+  border: 2px solid var(--custom-red);
+}
+
+.input-invalid::placeholder,
+.input-invalid:focus {
+  color: var(--custom-red);
+  outline: none;
+}
+
+/* Lists */
+.custom-ul {
+  padding-inline-start: 0;
+  margin: 0 1rem;
+}
+/* spaced */
+.list {
+  list-style: none;
+}
+
+.list-spaced {
+  margin: 1rem 0;
+  border: 2px solid var(--border-color);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  text-align: center;
+}
 
 @media (max-width: 900px) {
   .btn-float {
@@ -345,5 +408,15 @@
 
   .hori-resp {
     font-size: 0.9rem;
+  }
+
+  .image-responsive {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .image-round {
+    width: 20rem;
+    height: 20rem;
   }
 }
