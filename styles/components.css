@@ -407,8 +407,49 @@
   border-bottom: 2px solid var(--border-color);
 }
 
-.coming-soon {
+/* text-utilities */
+/* center text */
+.text-center {
   text-align: center;
+}
+
+/* heading */
+.fs {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.fs-1 {
+  font-size: 3rem;
+}
+
+.fs-2 {
+  font-size: 2.5rem;
+}
+
+.fs-3 {
+  font-size: 2rem;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+}
+
+.fs-5 {
+  font-size: 1rem;
+}
+
+.fs-6 {
+  font-size: 0.8rem;
+}
+
+/* small text */
+.fs-small {
+  font-size: 0.9rem;
+}
+/* gray text */
+.gray-text {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 900px) {
