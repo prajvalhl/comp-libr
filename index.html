@@ -42,6 +42,7 @@
       </div>
       <div class="nav sidebar">
         <ul>
+          <li><a href="#init">Get Started</a></li>
           <li><a href="#avatar">Avatar</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#badges">Badges</a></li>
@@ -57,6 +58,7 @@
           <li><a href="#sgrid">Simplified Grid</a></li>
           <li><a href="#text-utilities">Text Utilities</a></li>
           <li><a href="#toast">Toast</a></li>
+          <li><a href="#md-footer">More Details</a></li>
         </ul>
       </div>
       <div class="content" id="top-main">
@@ -65,6 +67,19 @@
             <span class="material-icons">arrow_circle_up</span>
           </a>
         </button>
+        <div id="init">
+          <h1>Get Started</h1>
+          <p>You can use our custom CSS Components by linking the following code in your HTML. </p>
+          <pre>
+  <code class="language-html">
+  &lt;link
+    rel="stylesheet"
+    href="https://comp-libr.netlify.app/styles/components.css"
+  />
+  </code>
+          </pre>
+        </div>
+        <hr />
         <div id="avatar">
           <h2>Avatars</h2>
           <div class="container-general">
@@ -263,8 +278,8 @@
           <pre>
   <code class="language-html">
   // Links
-  &lt;a class="link link-primary" href="#">Primary Link&lt;/a>
-  &lt;a class="link link-secondary" href="#">Secondary Link&lt;/a>
+  &lt;a class="link link-primary" href="">Primary Link&lt;/a>
+  &lt;a class="link link-secondary" href="">Secondary Link&lt;/a>
   </code>
           </pre>
           <h3>Icon Buttons</h3>
@@ -512,7 +527,7 @@
           <pre>
   <code class="language-html">
   // Responsive Image
-  &lt;img src="img/img-sample.jpg" alt="" class="image-responsive" />
+  &lt;img src="some-image-source" alt="" class="image-responsive" />
   </code>
           </pre>
           <h3>Round Image</h3>
@@ -522,7 +537,7 @@
           <pre>
   <code class="language-html">
   // Roung Image
-  &lt;img src="img/img-sample.jpg" alt="" class="image-round" />
+  &lt;img src="some-image-source" alt="" class="image-round" />
   </code>
         </pre>
         </div>
@@ -576,7 +591,23 @@
   </code>
           </pre>
           <h3>Stacked</h3>
-          <div></div>
+          <div>
+            <ul class="custom-ul">
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+            </ul>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Stacked List
+  &lt;ul class='custom-ul'>
+    &lt;li class="list list-stacked">This is a list Item</li>
+  &lt;/ul>
+  </code>
+          </pre>
         </div>
         <hr />
         <div id="navigation">
@@ -584,9 +615,9 @@
           <h3>Desktop</h3>
           <div></div>
           <h3>Submenus</h3>
-          <div></div>
+          <div class='coming-soon'>Coming soon...</div>
           <h3>Hamburger</h3>
-          <div></div>
+          <div class='coming-soon'>Coming soon...</div>
         </div>
         <hr />
         <div id="modal">
@@ -601,7 +632,7 @@
         <hr />
         <div id="slider">
           <h2>Slider</h2>
-          <div></div>
+          <div class='coming-soon'>Coming soon...</div>
         </div>
         <hr />
         <div id="sgrid">
@@ -628,6 +659,15 @@
           <h2>Toast</h2>
           <div></div>
         </div>
+        <hr />
+        <footer id="md-footer">
+          <p>&#169; comp-libr, 2021</p>
+          <ul>
+            <li class="list inline-list"><a class="link link-primary" href="https://github.com/prajvalhl/comp.libr" target="_blank">GitHub</a></li>
+            <li class="list inline-list"><a class="link link-primary" href="https://www.linkedin.com/in/hlprajval/" target="_blank">LinkedIn</a></li>
+            <li class="list inline-list"><a class="link link-secondary" href="https://twitter.com/l_prajval" target="_blank">Twitter</a></li>
+          </ul>
+        </footer>
       </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>

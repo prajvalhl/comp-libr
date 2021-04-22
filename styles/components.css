@@ -395,6 +395,22 @@
   text-align: center;
 }
 
+/* stacked */
+.list-stacked {
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  text-align: center;
+  border-bottom: none;
+}
+
+.list-stacked:last-child {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.coming-soon {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .btn-float {
     width: 2.5rem;
