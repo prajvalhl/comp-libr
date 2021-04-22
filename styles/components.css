@@ -426,6 +426,11 @@
     font-size: 0.9rem;
   }
 
+  .p-price {
+    display: block;
+    padding: 0 1rem;
+  }
+
   .image-responsive {
     width: 90%;
     margin: 0 5%;
