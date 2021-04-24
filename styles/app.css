@@ -170,8 +170,7 @@ h3 {
   .content {
     grid-column: 2 / 4;
     width: 80%;
-    /* padding-top: 6rem; */
-    margin-top: 6rem;
+    padding-top: 6rem;
     margin-left: 2rem;
   }
 
