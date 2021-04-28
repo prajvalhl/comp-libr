@@ -515,6 +515,95 @@
   padding-left: 0.5rem;
 }
 
+/* Simplified Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid div {
+  border: 1px solid var(--border-color);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* modal */
+.modal-container {
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  font-size: 3rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 300%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+/* toast */
+#toast {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadeInOut 3s;
+}
+
+@keyframes fadeInOut {
+  5%,
+  95% {
+    opacity: 1;
+    top: 50px;
+  }
+  15%,
+  85% {
+    opacity: 1;
+    top: 30px;
+  }
+}
+
 @media (max-width: 900px) {
   .btn-float {
     width: 2.5rem;
@@ -555,5 +644,9 @@
 
   .navbar-items li {
     padding: 0 0.3rem;
+  }
+
+  #toast {
+    background-color: var(--primary-color);
   }
 }

@@ -14,10 +14,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/atom-one-dark.min.css"
-    />
+    <link rel="stylesheet" href="styles/atom-one-dark.css" />
     <link rel="stylesheet" href="styles/components.css" />
     <link rel="stylesheet" href="styles/app.css" />
   </head>
@@ -57,7 +54,7 @@
           <li><a href="#slider">Slider</a></li>
           <li><a href="#sgrid">Simplified Grid</a></li>
           <li><a href="#text-utilities">Text Utilities</a></li>
-          <li><a href="#toast">Toast</a></li>
+          <li><a href="#toasts">Toast</a></li>
           <li><a href="#md-footer">More Details</a></li>
         </ul>
       </div>
@@ -664,7 +661,35 @@
         <hr />
         <div id="modal">
           <h2>Modal</h2>
-          <div></div>
+          <div class="modal-container">
+            <button class="btn btn-primary show-modal">Show modal</button>
+            <div class="modal hidden">
+              <button class="close-modal">&times;</button>
+              <h1>I'm a Modal 😍</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                incidunt recusandae eligendi vel, est temporibus perspiciatis
+                dolores magni excepturi ad.
+              </p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Modal
+  &lt;div class="modal-container">
+    &lt;button class="btn btn-primary show-modal">Show modal&lt;/button>
+    &lt;div class="modal hidden">
+      &lt;button class="close-modal">&times;&lt;/button>
+      &lt;h1>I'm a Modal 😍&lt;/h1>
+      &lt;p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+        incidunt recusandae eligendi vel, est temporibus perspiciatis
+        dolores magni excepturi ad.
+      &lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
         </div>
         <hr />
         <div id="rating">
@@ -692,9 +717,35 @@
         <div id="sgrid">
           <h2>Simplified Grid</h2>
           <h3>Grid-2</h3>
-          <div></div>
+          <div class="grid grid-2">
+            <div>Section 1</div>
+            <div>Section 2</div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Grid-2
+  &lt;div class="grid grid-2">
+    &lt;div>Section 1&lt;/div>
+    &lt;div>Section 2&lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
           <h3>Grid-3</h3>
-          <div></div>
+          <div class="grid grid-3">
+            <div>Section 1</div>
+            <div>Section 2</div>
+            <div>Section 3</div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Grid-3
+  &lt;div class="grid grid-3">
+    &lt;div>Section 1&lt;/div>
+    &lt;div>Section 2&lt;/div>
+    &lt;div>Section 3&lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
         </div>
         <hr />
         <div id="text-utilities">
@@ -748,12 +799,28 @@
   // Center Text
   &lt;p class="text-center">Enter your text here.&lt;/p>
   </code>
-          </pre>
+        </pre>
         </div>
         <hr />
-        <div id="toast">
+        <div id="toasts">
           <h2>Toast</h2>
-          <div></div>
+          <div>
+            <button class="btn btn-primary" onclick="showToast('Toast text')">
+              Show Toast
+            </button>
+            <div id="toast"></div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Toast
+  &lt;div>
+    &lt;button class="btn btn-primary" onclick="showToast('Toast text')">
+      Show Toast
+    &lt;/button>
+    &lt;div id="toast">&lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
         </div>
         <hr />
         <footer id="md-footer">
@@ -787,7 +854,8 @@
         </footer>
       </div>
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/highlight.min.js"></script>
+    <script src="scripts/highlight.pack.js"></script>
+    <script src="scripts/script.js"></script>
     <script>
       hljs.highlightAll();
     </script>
