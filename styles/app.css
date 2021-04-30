@@ -1,6 +1,10 @@
 /* All top level CSS are written to suit mobile layout */
 /* For Desktop layout, write your CSS in media query */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -154,7 +158,6 @@ h3 {
 /* responsive */
 @media (min-width: 1000px) {
   html {
-    scroll-behavior: smooth;
     scroll-padding-top: 9rem;
   }
   /* body */
