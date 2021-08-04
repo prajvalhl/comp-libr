@@ -1,3 +1,3 @@
 # comp-libr
 
-comp.libr is a custom component library which will be regurlarly updated with custom CSS components.
+### comp-libr is a fully responsive Custom CSS Component Library created using HTML, CSS and Vanilla-JS (ES6).
