@@ -150,6 +150,15 @@ h3 {
   padding-inline-start: 0px;
 }
 
+#md-footer a {
+  text-decoration: none;
+}
+
+#md-footer span {
+  color: #7c3aed;
+  font-weight: bolder;
+}
+
 /* toast */
 #toasts div {
   text-align: center;

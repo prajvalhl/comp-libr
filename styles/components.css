@@ -573,10 +573,10 @@
 #toast {
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 57%;
   transform: translate(-50%);
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: #c4b5fd;
+  color: var(--avatar-border);
   padding: 16px;
   border-radius: 4px;
   text-align: center;
@@ -647,6 +647,8 @@
   }
 
   #toast {
+    left: 50%;
+    color: #fff;
     background-color: var(--primary-color);
   }
 }
