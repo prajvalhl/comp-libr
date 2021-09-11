@@ -255,7 +255,7 @@
 .vertical-rating {
   position: absolute;
   left: 1rem;
-  top: 14.2rem;
+  top: 228px;
 }
 
 /* Horizontal card */
@@ -553,6 +553,7 @@
   margin: 0 auto;
   width: 3rem;
   height: 1.5rem;
+  border-radius: 0.3rem 0.3rem 0 0;
   color: white;
   background-color: var(--custom-green);
   display: flex;
