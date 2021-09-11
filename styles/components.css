@@ -237,12 +237,19 @@
 
 /* Vertical card */
 .card-vertical {
-  border: 1px solid black;
-  width: 250px;
+  border: 1px solid lightgrey;
+  width: 252px;
   margin: 0 auto;
   padding-bottom: 10px;
   position: relative;
-  z-index: -1;
+}
+
+.add-to-cart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+  background-color: white;
 }
 
 /* Horizontal card */
@@ -264,7 +271,7 @@
 
 .p-head {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .p-disc {
@@ -276,7 +283,6 @@
 
 .p-price {
   display: inline;
-  padding-left: 0;
   font-weight: 600;
 }
 
