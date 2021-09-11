@@ -345,7 +345,7 @@
             <img src="https://via.placeholder.com/252x252" alt="" />
             <div>
               <p class="ptext p-head">Product Name</p>
-              <div class="rating card-rating">
+              <div class="rating vertical-rating">
                 <p>4.4</p>
                 <span class="material-icons"> star_rate </span>
               </div>
@@ -365,6 +365,10 @@
   &lt;div class="card-vertical">
     &lt;img src="https://via.placeholder.com/250x275" alt="" />
     &lt;p class="ptext p-head">Product Name&lt;/p>
+    &lt;div class="rating vertical-rating">
+      &lt;p>4.4&lt;/p>
+      &lt;span class="material-icons"> star_rate &lt;/span>
+    &lt;/div>
     &lt;p class="ptext p-dec">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
     eligendi saepe quidem id voluptate nemo!
@@ -376,16 +380,27 @@
   &lt;/div>
   </code>
           </pre>
-          <h3>Horizontal Card</h3>
+          <h3>Horizontal Cart-Detail Card</h3>
           <div class="card-horizontal">
-            <img src="https://via.placeholder.com/250x275" alt="" />
+            <img src="https://via.placeholder.com/252x252" alt="" />
+            <div class="rating horizontal-rating">
+              <p>4.4</p>
+              <span class="material-icons"> star_rate </span>
+            </div>
             <div class="hori-resp">
               <p class="ptext p-head">Product Name</p>
+
               <p class="ptext p-dec">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                 eligendi saepe quidem id voluptate nemo!
               </p>
               <p class="ptext p-price">Rs 499 (50% OFF)</p>
+              <div class="ptext div-quantity">
+                <button class="btn-hCard">+</button>
+                <span>10</span>
+                <button class="btn-hCard">-</button>
+                <button class="btn-hCard h-remove">Remove</button>
+              </div>
             </div>
           </div>
           <pre>
@@ -393,6 +408,10 @@
   // Horizontal Card
   &lt;div class="card-horizontal">
     &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;div class="rating horizontal-rating">
+      &lt;p>4.4&lt;/p>
+      &lt;span class="material-icons"> star_rate &lt;/span>
+    &lt;/div>
     &lt;div>
       &lt;p class="ptext p-head">Product Name&lt;/p>
       &lt;p class="ptext p-dec">

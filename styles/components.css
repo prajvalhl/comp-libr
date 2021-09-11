@@ -252,7 +252,7 @@
   background-color: white;
 }
 
-.card-rating {
+.vertical-rating {
   position: absolute;
   left: 0.2rem;
   top: 14rem;
@@ -264,10 +264,46 @@
   display: flex;
   margin: 0 auto;
   max-width: 600px;
+  position: relative;
 }
 
 .hori-resp {
   font-size: 1rem;
+}
+
+.horizontal-rating {
+  position: absolute;
+  left: 0.2rem;
+  bottom: 0.2rem;
+}
+
+.div-quantity {
+  margin: 1rem;
+}
+
+.div-quantity span {
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
+.btn-hCard {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.h-remove {
+  margin-left: 2rem;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.h-remove:hover {
+  color: var(--custom-red);
 }
 
 /* vertical/horizontal general properties */
