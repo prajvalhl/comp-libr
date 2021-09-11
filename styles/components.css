@@ -288,10 +288,12 @@
 }
 
 .btn-hCard {
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   background-color: white;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
   transition: 0.25s;
 }
