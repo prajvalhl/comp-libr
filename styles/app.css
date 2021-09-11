@@ -44,6 +44,7 @@ h3 {
   padding: 0 2rem;
   align-items: center;
   height: 6rem;
+  box-sizing: border-box;
   z-index: 1;
 }
 
@@ -181,7 +182,7 @@ h3 {
 
   .header {
     position: fixed;
-    width: 97%;
+    width: 100%;
     height: 7rem;
   }
 
