@@ -252,9 +252,15 @@
   background-color: white;
 }
 
+.card-rating {
+  position: absolute;
+  left: 0.2rem;
+  top: 14rem;
+}
+
 /* Horizontal card */
 .card-horizontal {
-  border: 1px solid black;
+  border: 1px solid lightgrey;
   display: flex;
   margin: 0 auto;
   max-width: 600px;
@@ -507,8 +513,8 @@
 /* Ratings */
 .rating {
   margin: 0 auto;
-  width: 100px;
-  border-radius: 0.3rem;
+  width: 3rem;
+  height: 1.5rem;
   color: white;
   background-color: var(--custom-green);
   display: flex;
@@ -516,9 +522,10 @@
   align-items: center;
 }
 
-.rating span {
-  font-size: large;
-  padding-left: 0.5rem;
+.rating span,
+.rating p {
+  font-size: small;
+  padding-left: 0.2rem;
 }
 
 /* Simplified Grid */
