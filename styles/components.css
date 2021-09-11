@@ -303,6 +303,7 @@
 }
 
 .h-remove:hover {
+  background-color: white;
   color: var(--custom-red);
 }
 
