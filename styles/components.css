@@ -281,12 +281,6 @@
   margin: 1rem;
 }
 
-.div-quantity span {
-  display: inline-block;
-  width: 2rem;
-  text-align: center;
-}
-
 .btn-hCard {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
@@ -298,9 +292,16 @@
   transition: 0.25s;
 }
 
+.qty_btw_inc_dec {
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
 .h-remove {
   margin-left: 2rem;
   font-size: 1rem;
+  border: none;
 }
 
 .h-remove:hover {
