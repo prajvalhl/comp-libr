@@ -238,14 +238,10 @@
 /* Vertical card */
 .card-vertical {
   border: 1px solid lightgrey;
-  width: 16rem;
+  width: 252px;
+  margin: 0 auto;
   padding-bottom: 10px;
   position: relative;
-}
-
-.card-vertical-thumbnail {
-  width: 100%;
-  height: 100%;
 }
 
 .add-to-cart {
@@ -259,21 +255,20 @@
 .vertical-rating {
   position: absolute;
   left: 1rem;
-  top: 232px;
+  top: 228px;
 }
 
 /* Horizontal card */
 .card-horizontal {
   border: 1px solid lightgrey;
-  width: 45rem;
-  height: 15rem;
   display: flex;
+  margin: 0 auto;
+  max-width: 600px;
   position: relative;
 }
 
-.card-horizontal-thumbnail {
-  width: 15rem;
-  height: 15rem;
+.hori-resp {
+  font-size: 1rem;
 }
 
 .horizontal-rating {
@@ -314,8 +309,7 @@
   color: var(--custom-red);
 }
 
-/* vertical/horizontal cards general properties */
-
+/* vertical/horizontal general properties */
 .ptext {
   padding: 0 1rem;
 }
@@ -760,33 +754,17 @@
     bottom: 10px;
   }
 
+  .hori-resp {
+    font-size: 0.9rem;
+  }
+
   .p-price {
     display: block;
     padding: 0 1rem;
   }
 
-  /* horizontal card */
-  .card-horizontal {
-    width: 16rem;
-    height: auto;
-    flex-direction: column;
-  }
-
-  .card-horizontal-thumbnail {
-    width: 16rem;
-    height: auto;
-  }
-
-  .horizontal-rating {
-    left: 1rem;
-    top: 232px;
-  }
-
-  .h-remove {
-    margin: 0;
-  }
-
   /* video card */
+
   .video-card {
     width: 95%;
     height: 100%;
