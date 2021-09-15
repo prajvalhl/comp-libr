@@ -427,6 +427,7 @@
 
 .vcd-title {
   font-weight: bold;
+  width: 14rem;
 }
 
 .vcd-channel-name {
@@ -789,6 +790,10 @@
   /* video card */
   .video-card {
     width: 100%;
+  }
+
+  .vcd-title {
+    width: 17rem;
   }
 
   .video-card-other-option button {
