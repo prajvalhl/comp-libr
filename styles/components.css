@@ -790,6 +790,7 @@
   /* video card */
   .video-card {
     width: 100%;
+    height: auto;
   }
 
   .vcd-title {
