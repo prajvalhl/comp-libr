@@ -367,20 +367,26 @@
   <code class="language-html">
   // Vertical Card
   &lt;div class="card-vertical">
-    &lt;img src="https://via.placeholder.com/250x275" alt="" />
-    &lt;p class="ptext p-head">Product Name&lt;/p>
-    &lt;div class="rating vertical-rating">
-      &lt;p>4.4&lt;/p>
-      &lt;span class="material-icons"> star_rate &lt;/span>
+    &lt;img
+      class="card-vertical-thumbnail"
+      src="https://via.placeholder.com/200x200"
+      alt=""
+    />
+    &lt;div>
+      &lt;p class="ptext p-head">Product Name&lt;/p>
+      &lt;div class="rating vertical-rating">
+        &lt;p>4.4&lt;/p>
+        &lt;span class="material-icons"> star_rate &lt;/span>
+      &lt;/div>
+      &lt;p class="ptext p-dec">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        eligendi saepe quidem id voluptate nemo!
+      &lt;/p>
+      &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+      &lt;button class="btn btn-primary btn-icon add-to-cart">
+        &lt;span class="material-icons"> shopping_cart &lt;/span>
+      &lt;/button>
     &lt;/div>
-    &lt;p class="ptext p-dec">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-    eligendi saepe quidem id voluptate nemo!
-    &lt;/p>
-    &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
-    &lt;button class="btn btn-primary btn-icon add-to-cart">
-      &lt;span> shopping_cart_icon &lt;/span>
-    &lt;/button>
   &lt;/div>
   </code>
           </pre>
@@ -414,23 +420,26 @@
   <code class="language-html">
   // Horizontal Cart-Detail Card
   &lt;div class="card-horizontal">
-    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;img
+      class="card-horizontal-thumbnail"
+      src="https://via.placeholder.com/250x250"
+      alt=""
+    />
     &lt;div class="rating horizontal-rating">
       &lt;p>4.4&lt;/p>
       &lt;span class="material-icons"> star_rate &lt;/span>
     &lt;/div>
-    &lt;div>
+    &lt;div class="horizontal-text-desciption">
       &lt;p class="ptext p-head">Product Name&lt;/p>
       &lt;p class="ptext p-dec">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-      eligendi saepe quidem id voluptate nemo!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        eligendi saepe quidem id voluptate nemo!
       &lt;/p>
-      &lt;p class="ptext p-disc">Rs 999&lt;/p>
       &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
-      &lt;div class="ptext div-quantity">
-        &lt;button class="btn-hCard">+&lt;/button>
-        &lt;span>10&lt;/span>
+      &lt;div class="div-quantity">
         &lt;button class="btn-hCard">-&lt;/button>
+        &lt;span class="qty_btw_inc_dec">10&lt;/span>
+        &lt;button class="btn-hCard">+&lt;/button>
         &lt;button class="btn-hCard h-remove">Remove&lt;/button>
       &lt;/div>
     &lt;/div>
