@@ -434,6 +434,11 @@
   margin-block-start: 0.5rem;
 }
 
+.vcd-channel-name,
+.vcd-view-details {
+  color: gray;
+}
+
 .video-card-more-option .three-dots {
   color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
@@ -806,6 +811,7 @@
     color: black;
   }
 
+  /* responsive images */
   .image-responsive {
     width: 90%;
     margin: 0 5%;
