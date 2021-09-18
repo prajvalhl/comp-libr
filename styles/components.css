@@ -275,10 +275,10 @@
 }
 
 .card-horizontal-thumbnail {
-  width: 25rem;
-  height: 15rem;
+  width: 15rem;
+  /* height: 15rem;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 100%; */
   object-fit: cover;
 }
 
