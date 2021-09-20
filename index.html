@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Component Library</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/atom-one-dark.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <p>comp-libr</p>
+        <div>
+          <a
+            class="header-links"
+            href="https://github.com/prajvalhl/comp-libr"
+            target="_blank"
+            ><img
+              src="https://img.icons8.com/material-outlined/48/000000/github.png"
+              alt="github logo"
+            />
+          </a>
+          <a
+            class="header-links"
+            href="https://www.linkedin.com/in/hlprajval/"
+            target="_blank"
+            ><img
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              alt="linkedin logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="nav sidebar">
+        <ul>
+          <li><a href="#init">Get Started</a></li>
+          <li><a href="#avatar">Avatar</a></li>
+          <li><a href="#alerts">Alerts</a></li>
+          <li><a href="#badges">Badges</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#inputs">Inputs</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#modal">Modal</a></li>
+          <li><a href="#rating">Rating</a></li>
+          <li><a href="#slider">Slider</a></li>
+          <li><a href="#sgrid">Simplified Grid</a></li>
+          <li><a href="#text-utilities">Text Utilities</a></li>
+          <li><a href="#toasts">Toast</a></li>
+          <li><a href="#md-footer">Contact Me!</a></li>
+        </ul>
+      </div>
+      <div class="content" id="top-main">
+        <button
+          class="btn-float float-fix"
+          onclick='window.location.href="#top-main"'
+        >
+          <span class="material-icons">arrow_circle_up</span>
+        </button>
+        <div id="init">
+          <h1>Get Started</h1>
+          <p>
+            You can use our custom CSS Components by linking the following code
+            in your HTML.
+          </p>
+          <pre>
+  <code class="language-html">
+  &lt;link
+    rel="stylesheet"
+    href="https://comp-libr.netlify.app/styles/components.css"
+  />
+  </code>
+        </pre>
+          <p>
+            Also, link this JavaScript file at the end of the body for certain
+            components to work properly.
+          </p>
+          <pre>
+  <code class="language-html">
+  &lt;script src="https://comp-libr.netlify.app/scripts/script.js">&lt;/script>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="avatar">
+          <h2>Avatars</h2>
+          <div class="container-general">
+            <div>
+              <img
+                src="img/ash.png"
+                alt="large-avatar"
+                class="custom-avatar-large"
+              />
+            </div>
+            <div>
+              <img
+                src="img/ash.png"
+                alt="medium-avatar"
+                class="custom-avatar-medium"
+              />
+            </div>
+            <div>
+              <img
+                src="img/ash.png"
+                alt="small-avatar"
+                class="custom-avatar-small"
+              />
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Avatars
+  &lt;img src="some-image-source" alt="avatar" class="custom-avatar-large"/>
+  &lt;img src="some-image-source" alt="avatar" class="custom-avatar-medium"/>
+  &lt;img src="some-image-source" alt="avatar" class="custom-avatar-small"/>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="alerts">
+          <h2>Alerts</h2>
+          <div class="container-alert">
+            <div class="alert-danger">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Danger!</strong> Indicates a dangerous or potentially
+              negative action.
+            </div>
+            <div class="alert-success">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Success!</strong> Indicates a successful or positive
+              action.
+            </div>
+            <div class="alert-info">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Info!</strong> Indicates a neutral information change or
+              action.
+            </div>
+            <div class="alert-warning">
+              <span
+                class="closebtn"
+                onclick="this.parentElement.style.display='none';"
+                >&times;</span
+              >
+              <strong>Warning!</strong> Indicates a warning that might need
+              attention.
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Alert Danger
+  &ltdiv class="alert-danger">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
+
+  // Alert Success
+  &ltdiv class="alert-success">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
+
+  // Alert Info
+  &ltdiv class="alert-info">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
+
+  // Alert Warning
+  &ltdiv class="alert-warning">
+    &ltspan
+      class="closebtn"
+      onclick="this.parentElement.style.display='none';"
+      >&times;&lt/span>
+    Enter Your Text Here!
+  &lt/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="badges">
+          <h2>Badge</h2>
+          <h3>Badge on Icons</h3>
+          <br /><br />
+          <div class="container-general">
+            <div class="item">
+              <span class="material-icons"> alarm </span>
+              <span class="icon-badge">2</span>
+            </div>
+            <div class="item">
+              <span class="material-icons"> notifications </span>
+              <span class="icon-badge">10</span>
+            </div>
+            <div class="item">
+              <span class="material-icons"> chat </span>
+              <span class="icon-badge"></span>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Icon Badge
+  &lt;div class="item">
+    &lt;span> Your Icon Here &lt;/span>
+    &lt;span class="icon-badge">2&lt;/span>
+  &lt;/div>
+  </code>
+          </pre>
+          <br /><br />
+          <h3>Badge on Avatars</h3>
+          <br /><br />
+          <div class="container-general">
+            <div class="item">
+              <span class="icon-avatar">2</span>
+              <img src="img/ash.png" alt="" class="custom-avatar-medium" />
+            </div>
+            <div class="item">
+              <span class="icon-avatar"></span>
+              <img src="img/ash.png" alt="" class="custom-avatar-medium" />
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Avatar Badge
+  &lt;div class="item">
+    &lt;span class="icon-avatar"> 2 &lt;/span>
+    &lt;img src="some-image-source" alt="avatar-badge" class="custom-avatar-medium" />
+  &lt;/div>
+  </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="buttons">
+          <h2>Buttons</h2>
+          <h3>Primary</h3>
+          <div class="container-general">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-info">Info</button>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Buttons
+  &lt;button class="btn">Default&lt;/button>
+  &lt;button class="btn btn-primary">Primary&lt;/button>
+  &lt;button class="btn btn-secondary">Secondary&lt;/button>
+  &lt;button class="btn btn-success">Success&lt;/button>
+  &lt;button class="btn btn-danger">Danger&lt;/button>
+  &lt;button class="btn btn-warning">Warning&lt;/button>
+  &lt;button class="btn btn-info">Info&lt;/button>
+  </code>
+          </pre>
+          <h3>Links</h3>
+          <div class="container-general">
+            <a class="link link-primary" href="#">Primary Link</a>
+            <a class="link link-secondary" href="#">Secondary Link</a>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Links
+  &lt;a class="link link-primary" href="">Primary Link&lt;/a>
+  &lt;a class="link link-secondary" href="">Secondary Link&lt;/a>
+  </code>
+          </pre>
+          <h3>Icon Buttons</h3>
+          <div class="container-general">
+            <button class="btn btn-primary btn-icon">
+              <span class="material-icons btn-icon-text">favorite</span>
+              Favorite
+            </button>
+
+            <button class="btn btn-info btn-icon">
+              <span class="material-icons btn-icon-text">feedback</span>
+              Feedback
+            </button>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Icon Buttons
+  &lt;button class="btn btn-primary btn-icon">
+    &lt;span class='btn-icon-text'> Your Icon Here &lt;/span>
+    Favorite
+  &lt;/button>
+  </code>
+          </pre>
+          <h3>Floating Action Buttons</h3>
+          <div class="container-general">
+            <button class="btn-float">
+              <span class="material-icons">add</span>
+            </button>
+            <button class="btn-float">
+              <span class="material-icons">clear</span>
+            </button>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Floating Action Buttons
+  &lt;button class="btn-float float-fix">
+    &lt;span> Your Icon Here &lt;/span>
+  &lt;/button>
+  </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="cards">
+          <h2>Cards</h2>
+          <h3>Vertical Card</h3>
+          <div class="card-vertical">
+            <img
+              class="card-vertical-thumbnail"
+              src="https://via.placeholder.com/200x200"
+              alt=""
+            />
+            <div>
+              <p class="ptext p-head">Product Name</p>
+              <div class="rating vertical-rating">
+                <p>4.4</p>
+                <span class="material-icons"> star_rate </span>
+              </div>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+              <button class="btn btn-primary btn-icon add-to-cart">
+                <span class="material-icons"> shopping_cart </span>
+              </button>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Vertical Card
+  &lt;div class="card-vertical">
+    &lt;img
+      class="card-vertical-thumbnail"
+      src="https://via.placeholder.com/200x200"
+      alt=""
+    />
+    &lt;div>
+      &lt;p class="ptext p-head">Product Name&lt;/p>
+      &lt;div class="rating vertical-rating">
+        &lt;p>4.4&lt;/p>
+        &lt;span class="material-icons"> star_rate &lt;/span>
+      &lt;/div>
+      &lt;p class="ptext p-dec">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        eligendi saepe quidem id voluptate nemo!
+      &lt;/p>
+      &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+      &lt;button class="btn btn-primary btn-icon add-to-cart">
+        &lt;span class="material-icons"> shopping_cart &lt;/span>
+      &lt;/button>
+    &lt;/div>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Horizontal Cart-Detail Card</h3>
+          <div class="card-horizontal">
+            <img
+              class="card-horizontal-thumbnail"
+              src="https://via.placeholder.com/250x250"
+              alt=""
+            />
+            <div class="rating horizontal-rating">
+              <p>4.4</p>
+              <span class="material-icons"> star_rate </span>
+            </div>
+            <div class="horizontal-text-desciption">
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+              <div class="div-quantity">
+                <button class="btn-hCard">-</button>
+                <span class="qty_btw_inc_dec">10</span>
+                <button class="btn-hCard">+</button>
+                <button class="btn-hCard h-remove">Remove</button>
+              </div>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Horizontal Cart-Detail Card
+  &lt;div class="card-horizontal">
+    &lt;img
+      class="card-horizontal-thumbnail"
+      src="https://via.placeholder.com/250x250"
+      alt=""
+    />
+    &lt;div class="rating horizontal-rating">
+      &lt;p>4.4&lt;/p>
+      &lt;span class="material-icons"> star_rate &lt;/span>
+    &lt;/div>
+    &lt;div class="horizontal-text-desciption">
+      &lt;p class="ptext p-head">Product Name&lt;/p>
+      &lt;p class="ptext p-dec">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+        eligendi saepe quidem id voluptate nemo!
+      &lt;/p>
+      &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+      &lt;div class="div-quantity">
+        &lt;button class="btn-hCard">-&lt;/button>
+        &lt;span class="qty_btw_inc_dec">10&lt;/span>
+        &lt;button class="btn-hCard">+&lt;/button>
+        &lt;button class="btn-hCard h-remove">Remove&lt;/button>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Video Card</h3>
+          <div class="video-card">
+            <div class="video-card-other-option">
+              <button class="watch-later">
+                <span class="material-icons"> watch_later </span>
+              </button>
+              <button class="add-to-playlist">
+                <span class="material-icons"> playlist_add </span>
+              </button>
+            </div>
+            <img
+              class="video-card-thumbnail"
+              src="https://via.placeholder.com/1280x720"
+              alt=""
+            />
+            <div class="video-card-details">
+              <div class="video-card-channel-image">
+                <img
+                  src="https://via.placeholder.com/250x250"
+                  alt="avatar"
+                  class="custom-avatar-small"
+                />
+              </div>
+              <div class="video-card-details-text">
+                <p class="vcd-p vcd-title">Quia non nobis.</p>
+                <p class="vcd-p vcd-channel-name">The New York Times</p>
+                <p class="vcd-p vcd-view-details">10M views | 7 years ago</p>
+              </div>
+              <div class="video-card-more-option">
+                <button class="three-dots">
+                  <span class="material-icons"> more_vert </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Video Card
+  &lt;div class="video-card">
+    &lt;div class="video-card-other-option">
+      &lt;button class="watch-later">
+        &lt;span class="material-icons"> watch_later &lt;/span>
+      &lt;/button>
+      &lt;button class="add-to-playlist">
+        &lt;span class="material-icons"> playlist_add &lt;/span>
+      &lt;/button>
+    &lt;/div>
+    &lt;img
+      class="video-card-img"
+      src="some image source"
+      alt=""
+    />
+    &lt;div class="video-card-details">
+      &lt;div class="video-card-channel-image">
+        &lt;img
+          src="some avatar source"
+          alt="avatar"
+          class="custom-avatar-small"
+        />
+      &lt;/div>
+      &lt;div class="video-card-details-text">
+        &lt;p class="vcd-p vcd-title">
+          The Animals of Chernobyl | The New York Times
+        &lt;/p>
+        &lt;p class="vcd-p vcd-channel-name">Channel Name&lt;/p>
+        &lt;p class="vcd-p vcd-view-details">225k views | 7 days ago&lt;/p>
+      &lt;/div>
+      &lt;div class="video-card-other-option">
+        &lt;button>
+          &lt;span class="material-icons"> more_vert &lt;/span>
+        &lt;/button>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Text only Card</h3>
+          <div class="card-text">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+              recusandae provident, sapiente rerum itaque iste, illum totam
+              distinctio voluptatem veritatis accusamus reprehenderit blanditiis
+              harum ad consectetur accusantium numquam molestiae dolor.
+            </p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Text only Card
+  &lt;div class="card-text">
+    &lt;h1>Heading&lt;/h1>
+    &lt;p>
+    // Enter your text here
+    &lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with text overlay</h3>
+          <div class="card-text overlay-bg">
+            <div class="card-overlay">
+              <h1>Heading</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+                recusandae provident, sapiente rerum itaque iste, illum totam
+                distinctio voluptatem veritatis accusamus reprehenderit
+                blanditiis harum ad consectetur accusantium numquam molestiae
+                dolor.
+              </p>
+            </div>
+            <p class="overlay-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi, dolore!
+            </p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Card with Text Overlay
+  &lt;div class="card-text overlay-bg">
+    &lt;div class='card-overlay'>
+      &lt;h1>Heading&lt;/h1>
+      &lt;p>
+      // Enter your text here
+      &lt;/p>
+    &lt;/div>
+    &ltp class="overlay-text">Lorem ipsum dolor sit amet.&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with Dismiss</h3>
+          <div class="card-vertical">
+            <span class="material-icons card-dismiss">close</span>
+            <img src="https://via.placeholder.com/250x275" alt="" />
+            <div>
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-disc">Rs 999</p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Card with Dismiss
+  &lt;div class="card-vertical">
+  &lt;span class="material-icons card-dismiss">close&lt;/span>
+    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;p class="ptext p-head">Product Name&lt;/p>
+    &lt;p class="ptext p-dec">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+    eligendi saepe quidem id voluptate nemo!
+    &lt;/p>
+    &lt;p class="ptext p-disc">Rs 999&lt;/p>
+    &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with Badge</h3>
+          <div class="card-vertical">
+            <span class="card-badge">New!</span>
+            <img src="https://via.placeholder.com/250x275" alt="" />
+            <div>
+              <p class="ptext p-head">Product Name</p>
+              <p class="ptext p-dec">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                eligendi saepe quidem id voluptate nemo!
+              </p>
+              <p class="ptext p-disc">Rs 999</p>
+              <p class="ptext p-price">Rs 499 (50% OFF)</p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Card with Badge
+  &lt;div class="card-vertical">
+  &lt;span class="material-icons card-dismiss">close&lt;/span>
+    &lt;img src="https://via.placeholder.com/250x275" alt="" />
+    &lt;p class="ptext p-head">Product Name&lt;/p>
+    &lt;p class="ptext p-dec">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+    eligendi saepe quidem id voluptate nemo!
+    &lt;/p>
+    &lt;p class="ptext p-disc">Rs 999&lt;/p>
+    &lt;p class="ptext p-price">Rs 499 (50% OFF)&lt;/p>
+  &lt;/div>
+  </code>
+          </pre>
+          <h3>Card with Shadow</h3>
+          <div class="card-text card-shadow">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+              recusandae provident, sapiente rerum itaque iste, illum totam
+              distinctio voluptatem veritatis accusamus reprehenderit blanditiis
+              harum ad consectetur accusantium numquam molestiae dolor.
+            </p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Card with Shadow
+  &lt;div class="card-text card-shadow">
+    &lt;h1>Heading&lt;/h1>
+    &lt;p>
+    // Enter your text here
+    &lt;/p>
+  &lt;/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="images">
+          <h2>Images</h2>
+          <h3>Responsive Image</h3>
+          <div>
+            <img src="img/img-sample.jpg" alt="" class="image-responsive" />
+          </div>
+          <pre>
+  <code class="language-html">
+  // Responsive Image
+  &lt;img src="some-image-source" alt="" class="image-responsive" />
+  </code>
+          </pre>
+          <h3>Round Image</h3>
+          <div class="img-r">
+            <img src="img/img-sample.jpg" alt="" class="image-round" />
+          </div>
+          <pre>
+  <code class="language-html">
+  // Roung Image
+  &lt;img src="some-image-source" alt="" class="image-round" />
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="inputs">
+          <h2>Input</h2>
+          <h3>Textbox</h3>
+          <div>
+            <input type="text" placeholder="Email" class="input-textbox" />
+          </div>
+          <pre>
+  <code class="language-html">
+  // Textbox
+  &lt;input type="text" placeholder="Email" class="input-textbox" />
+  </code>
+          </pre>
+          <h3>Validation and Error styled</h3>
+          <div>
+            <input
+              type="text"
+              placeholder="Email"
+              class="input-textbox input-invalid"
+            />
+          </div>
+          <pre>
+  <code class="language-html">
+  // Textbox
+  &lt;input type="text" placeholder="Email" class="input-textbox input-invalid" />
+  </code>
+          </pre>
+        </div>
+        <hr />
+        <div id="lists">
+          <h2>Lists</h2>
+          <h3>Spaced</h3>
+          <div>
+            <ul class="custom-ul">
+              <li class="list list-spaced">This is a list Item</li>
+              <li class="list list-spaced">This is a list Item</li>
+              <li class="list list-spaced">This is a list Item</li>
+              <li class="list list-spaced">This is a list Item</li>
+              <li class="list list-spaced">This is a list Item</li>
+            </ul>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Spaced List
+  &lt;ul class='custom-ul'>
+    &lt;li class="list list-spaced">This is a list Item&lt;/li>
+  &lt;/ul>
+  </code>
+          </pre>
+          <h3>Stacked</h3>
+          <div>
+            <ul class="custom-ul">
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+              <li class="list list-stacked">This is a list Item</li>
+            </ul>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Stacked List
+  &lt;ul class='custom-ul'>
+    &lt;li class="list list-stacked">This is a list Item&lt;/li>
+  &lt;/ul>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="navigation">
+          <h2>Navigation</h2>
+          <h3>Desktop</h3>
+          <div>
+            <nav class="navbar">
+              <div class="navbar-icon">
+                <span class="material-icons"> fingerprint </span>
+                <a class="link link-primary" href="#navigation">CyberPrint</a>
+              </div>
+              <div>
+                <ul class="navbar-items">
+                  <li class="list inline-list">
+                    <input type="text" placeholder="search" class="search" />
+                  </li>
+                  <li class="list inline-list">Home</li>
+                  <li class="list inline-list">About</li>
+                  <li class="list inline-list">Contact</li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Navbar
+  &lt;nav class="navbar">
+    &lt;div class="navbar-icon">
+      &lt;span> Your Icon Here &lt;/span>
+      &lt;a class="link link-primary" href="">Your Company Name&lt;/a>
+    &lt;/div>
+    &lt;div>
+      &lt;ul class="navbar-items">
+        &lt;li class="list inline-list">
+          &lt;input type="text" placeholder="search" class="search" />
+        &lt;/li>
+        &lt;li class="list inline-list">Home&lt;/li>
+        &lt;li class="list inline-list">About&lt;/li>
+        &lt;li class="list inline-list">Contact&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/nav>
+  </code>
+          </pre>
+          <h3>Submenus</h3>
+          <div class="text-center">Coming soon...</div>
+          <h3>Hamburger</h3>
+          <div class="text-center">Coming soon...</div>
+        </div>
+        <hr />
+        <div id="modal">
+          <h2>Modal</h2>
+          <div class="modal-container">
+            <button class="btn btn-primary show-modal">Show modal</button>
+            <div class="modal hidden">
+              <button class="close-modal">&times;</button>
+              <h1>I'm a Modal 😍</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                incidunt recusandae eligendi vel, est temporibus perspiciatis
+                dolores magni excepturi ad.
+              </p>
+            </div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Modal
+  &lt;div class="modal-container">
+    &lt;button class="btn btn-primary show-modal">Show modal&lt;/button>
+    &lt;div class="modal hidden">
+      &lt;button class="close-modal">&times;&lt;/button>
+      &lt;h1>I'm a Modal 😍&lt;/h1>
+      &lt;p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+        incidunt recusandae eligendi vel, est temporibus perspiciatis
+        dolores magni excepturi ad.
+      &lt;/p>
+    &lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="rating">
+          <h2>Rating</h2>
+          <div class="rating">
+            <p>4.4</p>
+            <span class="material-icons"> star_rate </span>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Rating
+  &lt;div class="rating">
+    &lt;p>4.4&lt;/p>
+    &lt;span> Insert Your STAR Icone Here. &lt;/span>
+  &lt;/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="slider">
+          <h2>Slider</h2>
+          <div class="text-center">Coming soon...</div>
+        </div>
+        <hr />
+        <div id="sgrid">
+          <h2>Simplified Grid</h2>
+          <h3>Grid-2</h3>
+          <div class="grid grid-2">
+            <div>Section 1</div>
+            <div>Section 2</div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Grid-2
+  &lt;div class="grid grid-2">
+    &lt;div>Section 1&lt;/div>
+    &lt;div>Section 2&lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
+          <h3>Grid-3</h3>
+          <div class="grid grid-3">
+            <div>Section 1</div>
+            <div>Section 2</div>
+            <div>Section 3</div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Grid-3
+  &lt;div class="grid grid-3">
+    &lt;div>Section 1&lt;/div>
+    &lt;div>Section 2&lt;/div>
+    &lt;div>Section 3&lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="text-utilities">
+          <h2>Text Utilities</h2>
+          <h3>Heading</h3>
+          <div>
+            <p class="fs fs-1 text-center">.fs-1 text</p>
+            <p class="fs fs-2 text-center">.fs-2 text</p>
+            <p class="fs fs-3 text-center">.fs-3 text</p>
+            <p class="fs fs-4 text-center">.fs-4 text</p>
+            <p class="fs fs-5 text-center">.fs-5 text</p>
+            <p class="fs fs-6 text-center">.fs-6 text</p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Heading
+  &lt;p class="fs fs-1">.fs-1 text&lt;/p>
+  &lt;p class="fs fs-2">.fs-2 text&lt;/p>
+  &lt;p class="fs fs-3">.fs-3 text&lt;/p>
+  &lt;p class="fs fs-4">.fs-4 text&lt;/p>
+  &lt;p class="fs fs-5">.fs-5 text&lt;/p>
+  &lt;p class="fs fs-6">.fs-6 text&lt;/p>
+  </code>
+          </pre>
+          <h3>Small Text</h3>
+          <div>
+            <p class="fs-small text-center">Small text here.</p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Small Text
+  &lt;p class="fs-small">Enter your text here.&lt;/p>
+  </code>
+          </pre>
+          <h3>Gray Text</h3>
+          <div>
+            <p class="gray-text text-center">Gray text here.</p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Gray Text
+  &lt;p class="gray-text">Enter your text here.&lt;/p>
+  </code>
+          </pre>
+          <h3>Center Text</h3>
+          <div>
+            <p class="text-center">Center text here.</p>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Center Text
+  &lt;p class="text-center">Enter your text here.&lt;/p>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="toasts">
+          <h2>Toast</h2>
+          <div>
+            <button class="btn btn-primary" onclick="showToast('Toast text')">
+              Show Toast
+            </button>
+            <div id="toast"></div>
+          </div>
+          <pre>
+  <code class="language-html">
+  // Toast
+  &lt;div>
+    &lt;button class="btn btn-primary" onclick="showToast('Toast text')">
+      Show Toast
+    &lt;/button>
+    &lt;div id="toast">&lt;/div>
+  &lt;/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <footer id="md-footer">
+          <h2>Connect with me on</h2>
+          <ul>
+            <li class="list inline-list">
+              <a
+                class="link link-primary"
+                href="https://github.com/prajvalhl"
+                target="_blank"
+              >
+                <img
+                  src="https://img.icons8.com/material-outlined/48/000000/github.png"
+                  alt="github logo"
+                />
+              </a>
+            </li>
+            <li class="list inline-list">
+              <a
+                class="link link-primary"
+                href="https://www.linkedin.com/in/hlprajval/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/color/48/000000/linkedin.png"
+                  alt="linkedin logo"
+                />
+              </a>
+            </li>
+            <li class="list inline-list">
+              <a
+                class="link link-secondary"
+                href="https://twitter.com/l_prajval"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/color/48/000000/twitter--v1.png"
+                  alt="twitter logo"
+                />
+              </a>
+            </li>
+          </ul>
+          <p>Made with <span>&lt;/&gt;</span> by Prajval H L</p>
+          <p>&#169; comp-libr, 2021</p>
+        </footer>
+      </div>
+    </div>
+    <script src="scripts/highlight.pack.js"></script>
+    <script src="scripts/script.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

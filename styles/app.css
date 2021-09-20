@@ -1,0 +1,223 @@
+/* All top level CSS are written to suit mobile layout */
+/* For Desktop layout, write your CSS in media query */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+/* highlight JS */
+.language-html {
+  width: 80%;
+  margin: auto;
+  justify-content: start;
+  font-size: 1rem;
+}
+
+/* grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.header {
+  grid-column: 1/4;
+  background-color: #8b5cf6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  height: 6rem;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.header-links {
+  height: 30px;
+  padding: 0 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.header p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar {
+  display: block;
+  overflow: auto;
+  height: 87vh;
+  max-width: 250px;
+  position: fixed;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.nav {
+  display: none;
+  grid-column: 1;
+}
+
+.nav li {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  transition: 0.25s;
+}
+
+.nav a:hover {
+  color: #7c3aed;
+  cursor: pointer;
+}
+
+.content {
+  grid-column: 1 / 4;
+}
+
+.content > div {
+  margin: 3rem 0;
+}
+
+#init p {
+  text-align: center;
+}
+
+/* general container */
+.container-general {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Avatars */
+.container-general div {
+  margin: 0 1rem;
+}
+
+/* Alerts */
+.container-alert div {
+  margin: 1rem 0;
+}
+
+/* Badge */
+.container-general .item {
+  margin: 0 2rem;
+}
+
+/* button */
+.container-general .btn,
+.link,
+.btn-float {
+  margin: 10px 20px;
+}
+
+/* card */
+
+.card-vertical {
+  margin: 0 auto;
+}
+
+.card-horizontal {
+  margin: 0 auto;
+}
+
+.video-card {
+  margin: 0 auto;
+}
+
+/* navigation */
+
+/* footer */
+#md-footer {
+  margin: 3rem 0;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+}
+
+#md-footer ul {
+  padding-inline-start: 0px;
+}
+
+#md-footer a {
+  text-decoration: none;
+}
+
+#md-footer span {
+  color: #7c3aed;
+  font-weight: bolder;
+}
+
+/* toast */
+#toasts div {
+  text-align: center;
+}
+
+/* responsive */
+@media (min-width: 1000px) {
+  html {
+    scroll-padding-top: 9rem;
+  }
+  /* body */
+  .nav {
+    display: grid;
+    width: 250px;
+  }
+
+  .language-html {
+    width: 90%;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+  }
+
+  .content {
+    grid-column: 2 / 4;
+    width: 80%;
+    padding-top: 6rem;
+    margin-left: 2rem;
+  }
+
+  .header-links {
+    height: 50px;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .container-general {
+    margin-bottom: 2rem;
+  }
+
+  .header p {
+    font-size: 3rem;
+  }
+}
