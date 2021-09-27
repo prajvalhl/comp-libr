@@ -281,10 +281,6 @@
   z-index: 2;
 }
 
-.add-to-wishlist:hover {
-  color: var(--custom-red);
-}
-
 .vertical-rating {
   position: absolute;
   left: 1rem;
