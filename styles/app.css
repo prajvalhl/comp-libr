@@ -45,7 +45,7 @@ h3 {
   align-items: center;
   height: 6rem;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 100;
 }
 
 .header-links {
