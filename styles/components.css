@@ -269,7 +269,6 @@
 
 .add-to-wishlist {
   padding: 0;
-  border-radius: 0;
   transition: 0.25s;
   position: absolute;
   right: 0.4rem;
@@ -278,6 +277,7 @@
   background-color: rgb(255 255 255 / 0.5);
   padding: 0.2rem;
   border-radius: 50%;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5);
   z-index: 2;
 }
 
