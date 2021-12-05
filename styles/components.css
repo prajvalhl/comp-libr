@@ -507,6 +507,44 @@
   cursor: pointer;
 }
 
+/* expanding card */
+.expanding-card {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  position: relative;
+  flex: 0.5;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
 /* images */
 /* Responsive Image */
 .image-responsive {
@@ -825,12 +863,8 @@
 
   /* video card */
   .video-card {
-    width: 100%;
+    width: 99%;
     height: auto;
-  }
-
-  .vcd-title {
-    width: 17rem;
   }
 
   .video-card-other-option button {
@@ -840,6 +874,22 @@
 
   .video-card-more-option .three-dots {
     color: black;
+  }
+
+  /* expanding card */
+  .panel {
+    margin: 0.3rem;
+    flex: 0.1;
+    height: 50vh;
+  }
+
+  .panel.active {
+    flex: 0.6;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
   }
 
   /* responsive images */

@@ -102,6 +102,10 @@ h3 {
   margin: 3rem 0;
 }
 
+.btn-float {
+  z-index: 10;
+}
+
 #init p {
   text-align: center;
 }
