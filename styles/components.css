@@ -536,11 +536,11 @@
   opacity: 0;
 }
 
-.panel.active {
+.panel.ec-active {
   flex: 5;
 }
 
-.panel.active h3 {
+.panel.ec-active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
@@ -821,6 +821,74 @@
   }
 }
 
+/* Progress Steps */
+.progress-steps {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.progress-active {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+#progress-steps .btn {
+  margin: 1rem;
+}
+
+#progress-steps .btn:active {
+  transform: scale(0.98);
+}
+
+#progress-steps .btn:disabled {
+  background-color: var(--border-color);
+  cursor: not-allowed;
+}
+
 @media (max-width: 900px) {
   .btn-float {
     width: 2.5rem;
@@ -883,7 +951,7 @@
     height: 50vh;
   }
 
-  .panel.active {
+  .panel.ec-active {
     flex: 0.6;
   }
 
