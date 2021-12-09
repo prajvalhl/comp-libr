@@ -28,12 +28,58 @@ const panels = document.querySelectorAll(".panel");
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
     removeActiveClass();
-    panel.classList.add("active");
+    panel.classList.add("ec-active");
   });
 });
 
 function removeActiveClass() {
   panels.forEach((panel) => {
-    panel.classList.remove("active");
+    panel.classList.remove("ec-active");
   });
+}
+
+// progress steps
+
+const progress = document.querySelector("#progress");
+const prev = document.querySelector("#prev");
+const next = document.querySelector("#next");
+const circles = document.querySelectorAll(".circle");
+
+let currentActive = 1;
+
+next.addEventListener("click", () => {
+  currentActive++;
+  if (currentActive > circles.length) currentActive = circles.length;
+  progressUpdate();
+});
+
+prev.addEventListener("click", () => {
+  currentActive--;
+  if (currentActive < 1) currentActive = 1;
+  progressUpdate();
+});
+
+function progressUpdate() {
+  circles.forEach((circle, idx) => {
+    if (idx < currentActive) {
+      circle.classList.add("progress-active");
+    } else {
+      circle.classList.remove("progress-active");
+    }
+  });
+
+  const actives = document.querySelectorAll(".progress-active");
+
+  progress.style.width = `${
+    ((actives.length - 1) / (circles.length - 1)) * 100
+  }%`;
+
+  if (currentActive === 1) {
+    prev.disabled = true;
+  } else if (currentActive === circles.length) {
+    next.disabled = true;
+  } else {
+    prev.disabled = false;
+    next.disabled = false;
+  }
 }

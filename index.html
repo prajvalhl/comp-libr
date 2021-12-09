@@ -61,6 +61,7 @@
           <li><a href="#sgrid">Simplified Grid</a></li>
           <li><a href="#text-utilities">Text Utilities</a></li>
           <li><a href="#toasts">Toast</a></li>
+          <li><a href="#progress-steps">Progress Steps</a></li>
           <li><a href="#md-footer">Contact Me!</a></li>
         </ul>
       </div>
@@ -677,7 +678,7 @@
           <h3>Expanding Cards</h3>
           <div class="expanding-card">
             <div
-              class="panel active"
+              class="panel ec-active"
               style="
                 background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
               "
@@ -1032,6 +1033,37 @@
     &lt;/button>
     &lt;div id="toast">&lt;/div>
   &lt;/div>
+  </code>
+        </pre>
+        </div>
+        <hr />
+        <div id="progress-steps">
+          <h2>Progress Steps</h2>
+          <div class="progress-steps">
+            <div class="progress-container">
+              <div class="progress" id="progress"></div>
+              <div class="circle progress-active">1</div>
+              <div class="circle">2</div>
+              <div class="circle">3</div>
+              <div class="circle">4</div>  
+            </div>
+            <button class="btn btn-primary" id="prev" disabled>Prev</button>
+            <button class="btn btn-primary" id="next">Next</button>
+          </div> 
+          <pre>
+  <code class="language-html">
+  // Progress Steps
+  &lt;div class="progress-steps">
+    &lt;div class="progress-container">
+      &lt;div class="progress" id="progress">&lt;/div>
+      &lt;div class="circle progress-active">1&lt;/div>
+      &lt;div class="circle">2&lt;/div>
+      &lt;div class="circle">3&lt;/div>
+      &lt;div class="circle">4&lt;/div>  
+    &lt;/div>
+    &lt;button class="btn btn-primary" id="prev" disabled>Prev&lt;/button>
+    &lt;button class="btn btn-primary" id="next">Next&lt;/button>
+  &lt;/div> 
   </code>
         </pre>
         </div>
